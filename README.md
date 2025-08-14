@@ -3,12 +3,7 @@
 ![Design preview for the Recipe finder website coding challenge](./preview.jpg)
 
 ## Welcome! 👋
-
-Thanks for purchasing this premium Frontend Mentor coding challenge.
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. These premium challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
-
-**To do this challenge, you need a strong understanding of HTML, CSS, and JavaScript.**
+This challenge use strong understanding of HTML, CSS, JavaScript and React.js.
 
 ## The challenge
 
