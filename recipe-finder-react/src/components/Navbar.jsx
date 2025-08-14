@@ -24,10 +24,10 @@ const Navbar = () => {
                 <div className="nav-list">
                 {menuToggle && (
                 <ul className="nav-list-ul">
-                <li>Home</li>
-                <li>About</li>
-                <li>Recips</li>
-                <li>
+                <li className="li">Home</li>
+                <li className="li">About</li>
+                <li className="li">Recips</li>
+                <li className="liButton">
                     <button>Browse Recipes</button>
                 </li>
                 </ul>
