@@ -1,68 +1,217 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Nunito - Fontes Estáticas */
+@font-face {
+  font-family: 'Nunito';
+  src: url('./assets/fonts/Nunito/static/Nunito-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+@font-face {
+  font-family: 'Nunito';
+  src: url('./assets/fonts/Nunito/static/Nunito-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
 }
-a:hover {
-  color: #535bf2;
+@font-face {
+  font-family: 'Nunito';
+  src: url('./assets/fonts/Nunito/static/Nunito-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+/* Nunito - Fontes Variáveis */
+@font-face {
+  font-family: 'Nunito Variable';
+  src: url('./assets/fonts/Nunito/static/Nunito-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nunito Variable';
+  src: url('./assets/fonts/Nunito/static/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+/* Nunito Sans - Fontes Variáveis */
+@font-face {
+  font-family: 'Nunito Sans Variable';
+  src: url('./assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nunito Sans Variable';
+  src: url('./assets/fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    background-color: var(--Neutral100);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* ======================== */
+/* 🌱 Base (Mobile First)   */
+/* ======================== */
+:root {
+  /* Colors */
+  --Neutral900: #163A34;
+  --Neutral600: #395852;
+  --Neutral300: #D0DCD9;
+  --Neutral200: #E0E6E3;
+  --Neutral100: #F6F5F1;
+  --Neutral0: #FFFFFF;
+  --Orange500: #FE9F6B;
+  --Teal500: #49AC9B;
+  --Indigo500: #697DDB; 
+
+   /* Tipografia */
+  --font-primary: 'Nunito', sans-serif;
+  --font-primary-variable: 'Nunito Variable', sans-serif;
+  --font-secondary-variable: 'Nunito Sans Variable', sans-serif;
+  /* ===================== */
+  /* Text Preset 1         */
+  /* ===================== */
+  --text-1-size: 4.5rem;        /* 72px */
+  --text-1-line: 110%;
+  --text-1-spacing: -0.125rem;  /* -2px */
+  --text-1-weight: 800;
+  --text-1-font: var(--font-primary);
+  /* Tablet */
+  --text-1-tablet-size: 4rem;   /* 64px */
+  /* Mobile */
+  --text-1-mobile-size: 3.25rem; /* 52px */
+  /* ===================== */
+  /* Text Preset 2         */
+  /* ===================== */
+  --text-2-size: 3rem;         /* 48px */
+  --text-2-mobile-size: 2.5rem; /* 40px */
+  --text-2-line: 120%;
+  --text-2-spacing: -0.125rem; /* -2px */
+  --text-2-weight: 800;
+  --text-2-font: var(--font-primary);
+  /* ===================== */
+  /* Text Preset 3         */
+  /* ===================== */
+  --text-3-size: 2rem;         /* 32px */
+  --text-3-line: 130%;
+  --text-3-spacing: -0.0625rem; /* -1px */
+  --text-3-weight: 700;
+  --text-3-font: var(--font-primary);
+  /* ===================== */
+  /* Text Preset 4         */
+  /* ===================== */
+  --text-4-size: 1.5rem;       /* 24px */
+  --text-4-line: 130%;
+  --text-4-spacing: -0.0625rem; /* -1px */
+  --text-4-weight: 700;
+  --text-4-font: var(--font-primary);
+  /* ===================== */
+  /* Text Preset 5         */
+  /* ===================== */
+  --text-5-size: 1.25rem;      /* 20px */
+  --text-5-line: 140%;
+  --text-5-spacing: -0.03125rem; /* -0.5px */
+  --text-5-weight: 700;
+  --text-5-font: var(--font-primary);
+  /* ===================== */
+  /* Text Preset 6         */
+  /* ===================== */
+  --text-6-size: 1.25rem;      /* 20px */
+  --text-6-line: 150%;
+  --text-6-spacing: -0.025rem; /* -0.4px */
+  --text-6-weight: 500;
+  --text-6-font: var(--font-secondary-variable);
+  /* ===================== */
+  /* Text Preset 7         */
+  /* ===================== */
+  --text-7-size: 1.125rem;     /* 18px */
+  --text-7-line: 150%;
+  --text-7-spacing: -0.01875rem; /* -0.3px */
+  --text-7-weight: 600;
+  --text-7-font: var(--font-primary);
+  /* ===================== */
+  /* Text Preset 8         */
+  /* ===================== */
+  --text-8-size: 1rem;         /* 16px */
+  --text-8-line: 150%;
+  --text-8-spacing: -0.01875rem; /* -0.3px */
+  --text-8-weight: 700;
+  --text-8-font: var(--font-secondary-variable);
+  /* ===================== */
+  /* Text Preset 9         */
+  /* ===================== */
+  --text-9-size: 1rem;         /* 16px */
+  --text-9-line: 150%;
+  --text-9-spacing: -0.01875rem; /* -0.3px */
+  --text-9-weight: 500;
+  --text-9-font: var(--font-secondary-variable);
+  /* ===================== */
+  /* Text Preset 10        */
+  /* ===================== */
+  --text-10-size: 0.875rem;    /* 14px */
+  --text-10-line: 150%;
+  --text-10-spacing: -0.01875rem; /* -0.3px */
+  --text-10-weight: 700;
+  --text-10-font: var(--font-secondary-variable);
+
+  /* Espaçamentos */
+  --spacing-0: 0rem;
+  --spacing-025: 0.125rem; /* 2px */
+  --spacing-050: 0.25rem; /* 4px */
+  --spacing-075: 0.375rem; /* 6px */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-125: 0.625rem; /* 10px */
+  --spacing-150: 0.75rem; /* 12px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-250: 1.25rem; /* 20px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-500: 2.5rem; /* 40px */
+  --spacing-600: 3rem; /* 48px */
+  --spacing-800: 4rem; /* 64px */
+  --spacing-1000: 5rem; /* 80px */
+  --spacing-1200: 6rem; /* 96px */
+  --spacing-1400: 7rem; /* 112px */
+  --spacing-1600: 8rem; /* 128px */
+  --spacing-1800: 9rem; /* 144px */
+
+  /* Bordas */
+  --radius-0: 0rem;
+  --radius-4: 0.25rem; /* 4px */
+  --radius-6: 0.375rem; /* 6px */
+  --radius-8: 0.5rem; /* 8px */
+  --radius-10: 0.625rem; /* 10px */
+  --radius-12: 0.75rem; /* 12px */
+  --radius-16: 1rem; /* 16px */
+  --radius-20: 1.25rem; /* 20px */
+  --radius-24: 1.5rem; /* 24px */
+  --radius-full: 62.4375rem; /* 999px */
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
+/* ======================== */
+/* 📱 Tablet (≥ 768px)      */
+/* ======================== */
+@media (min-width: 768px) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --text-1-size: 1.625rem; /* 26px */
+    --text-2-size: 1.25rem; /* 20px */
+    --text-3-size: 1.125rem; /* 18px */
+    --text-4-size: 1rem; /* 16px */
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+}
+
+/* ======================== */
+/* 💻 Desktop (≥ 1440px)    */
+/* ======================== */
+@media (min-width: 1440px) {
+  :root {
+    --text-1-size: 2rem; /* 32px */
+    --text-2-size: 1.5rem; /* 24px */
+    --text-3-size: 1.25rem; /* 20px */
+    --text-4-size: 1.125rem; /* 18px */
   }
 }

@@ -1,0 +1,52 @@
+
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-200);
+    position: relative;
+}
+
+.hamburgerMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+    background-color: var(--Neutral300);
+    border-radius: var(--radius-4);
+}
+
+.nav-list{
+    width: 90%;
+    top: ;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: var(--Neutral0);
+    border-radius: var(--radius-8);
+}
+
+.nav-list-ul{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: var(--spacing-100);
+    margin: 0; 
+    box-sizing: border-box;
+    list-style: none; 
+}
+
+.nav-list-ul li{
+    width: 100%;
+    padding-top: var(--spacing-150);
+    padding-bottom: var(--spacing-150);
+    padding-left: var(--spacing-100);;
+}

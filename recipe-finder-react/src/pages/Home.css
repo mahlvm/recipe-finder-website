@@ -1,0 +1,34 @@
+/* -------------------- */
+/* Mobile (base) - 375px */
+/* -------------------- */
+.homeContainer {
+    background-color: var(--Neutral100);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/* -------------------- */
+/* Tablet - 768px */
+/* -------------------- */
+@media (min-width: 768px) {
+.homeContainer {
+    font-size: 18px;
+    padding: 32px;
+  }
+}
+
+/* -------------------- */
+/* Desktop - 1440px */
+/* -------------------- */
+@media (min-width: 1440px) {
+.homeContainer{
+    font-size: 20px;
+    padding: 64px;
+  }
+}
