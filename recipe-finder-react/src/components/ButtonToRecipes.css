@@ -1,0 +1,26 @@
+.customButton{
+    width: 100%;
+    padding-top: var(--spacing-12);
+    padding-bottom: var(--spacing-12);
+    border-radius: var(--radius-10);
+    background-color: var(--Neutral900);
+    color: var(--Neutral0);
+    border: none;
+    font-family: var(--text-5-font);
+    font-size: var(--text-5-size);
+    line-height: var(--text-5-line);
+    letter-spacing: var(--text-5-spacig);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.customButton.umnoveoito{
+    width: 13rem;
+    height: 3.75rem;
+    padding-top: var(--spacing-16);
+    padding-bottom: var(--spacing-16);
+    padding-left: var(--spacing-32);
+    padding-right: var(--spacing-32);  
+}

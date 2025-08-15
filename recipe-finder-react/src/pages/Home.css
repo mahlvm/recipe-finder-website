@@ -12,23 +12,56 @@
     justify-content: flex-start;
 }
 
+.mainHome {
+    width: 100%;
+    padding-top: var(--spacing-48);
+    padding-left: var(--spacing-16);
+    padding-right: var(--spacing-16);
+}
+
+.section1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: var(--spacing-16);
+}
+
+.section1 h1{
+  font-family: var(--font-primary);
+  font-size: var(--text-1-mobile-size);
+  font-weight: var(--text-1-weight);
+  line-height: var(--text-1-line);
+  letter-spacing: var(--text-1-spacing);
+  color: var(--Neutral900);
+}
+
+.section1 p{
+  font-family: var(--font-secondary-variable);
+  font-size: var(--text-6-size);
+  font-weight: var(--text-6-weight);
+  line-height: var(--text-6-line);
+  letter-spacing: var(--text-6-spacing);
+  color: var(--Neutral800);
+}
 
 /* -------------------- */
 /* Tablet - 768px */
 /* -------------------- */
 @media (min-width: 768px) {
-.homeContainer {
-    font-size: 18px;
-    padding: 32px;
-  }
+    .homeContainer {
+        font-size: 18px;
+        padding: var(--spacing-32);
+    }
 }
 
 /* -------------------- */
 /* Desktop - 1440px */
 /* -------------------- */
 @media (min-width: 1440px) {
-.homeContainer{
-    font-size: 20px;
-    padding: 64px;
-  }
+    .homeContainer {
+        font-size: 20px;
+        padding: var(--spacing-64);
+    }
 }

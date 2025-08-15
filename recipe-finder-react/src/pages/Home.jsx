@@ -1,18 +1,19 @@
 import './Home.css'
 import Navbar from "../components/Navbar";
+import ButtonToRecipes from "../components/ButtonToRecipes";
 
 const Home = () => {
   return (
     <div className='homeContainer'>
         <Navbar/>
-        <main>
-        <section>
+        <main className='mainHome'>
+        <section className='section1'>
             <h1>Healthy meals, zero fuss</h1>
             <p>
             Discover eight quick, whole-food recipes that you can cook tonight—no
             processed junk, no guesswork.
             </p>
-            <button>Start exploring</button>
+            <ButtonToRecipes text="Start exploring" className="umnoveoito" />
         </section>
 
         <section>

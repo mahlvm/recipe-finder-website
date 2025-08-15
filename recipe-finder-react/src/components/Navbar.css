@@ -8,7 +8,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: var(--spacing-200);
+    padding: var(--spacing-16);
     position: relative;
 }
 
@@ -17,18 +17,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0.625rem;
+    padding: 0.625rem; /* 10px */
     background-color: var(--Neutral300);
     border-radius: var(--radius-4);
 }
-
 
 .nav-list{
     position: absolute;
     z-index: 100;
     left: 0;
     right: 0;
-    margin: 0 var(--spacing-200);
+    margin: 0 var(--spacing-16);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -43,7 +42,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: var(--spacing-100);
+    padding: var(--spacing-8);
     margin: 0; 
     box-sizing: border-box;
     list-style: none; 
@@ -54,27 +53,26 @@
     font-family: var(--text-7-font);
     font-size: var(--text-7-size);
     width: 100%;
-    padding-top: var(--spacing-150);
-    padding-bottom: var(--spacing-150);
-    padding-left: var(--spacing-100);
-    padding-right: var(--spacing-100);
+    padding-top: var(--spacing-12);
+    padding-bottom: var(--spacing-12);
+    padding-left: var(--spacing-8);
+    padding-right: var(--spacing-8);
 }
 
 .liButton{
-    padding-left: var(--spacing-100);
-    padding-right: var(--spacing-100);
+    padding-left: var(--spacing-8);
+    padding-right: var(--spacing-8);
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
 
 .liButton button{
     width: 100%;
-    padding-top: var(--spacing-150);
-    padding-bottom: var(--spacing-150);
+    padding-top: var(--spacing-12);
+    padding-bottom: var(--spacing-12);
     border-radius: var(--radius-10);
     background-color: var(--Neutral900);
     color: var(--Neutral0);

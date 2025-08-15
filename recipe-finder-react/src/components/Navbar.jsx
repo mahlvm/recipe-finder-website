@@ -2,6 +2,7 @@ import logo from "../assets/images/logo.svg";
 import hamburgerMenu from "../assets/images/icon-hamburger-menu.svg";
 import { useState } from "react";
 import "./Navbar.css"
+import ButtonToRecipes from "./ButtonToRecipes";
 
 const Navbar = () => {
     const [menuToggle, setMenuToggle] = useState(false)
@@ -28,7 +29,7 @@ const Navbar = () => {
                 <li className="li">About</li>
                 <li className="li">Recips</li>
                 <li className="liButton">
-                    <button>Browse Recipes</button>
+                    <ButtonToRecipes text="Browse recipes" className="" />
                 </li>
                 </ul>
             )}
