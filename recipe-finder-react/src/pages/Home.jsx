@@ -1,5 +1,6 @@
 import './Home.css'
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import ButtonToRecipes from "../components/ButtonToRecipes";
 import carrot from "../assets/images/icon-whole-food-recipes.svg";
 import fuss from "../assets/images/icon-minimum-fuss.svg";
@@ -7,9 +8,8 @@ import search from "../assets/images/icon-search-in-seconds.svg";
 import imagehomeherosmall from "../assets/images/image-home-hero-small.webp";
 import patternsquiggle1 from "../assets/images/pattern-squiggle-1.svg";
 import imagehomereallifesmall from "../assets/images/image-home-real-life-small.webp";
-import instagram from "../assets/images/icon-instagram.svg";
-import bluesky from "../assets/images/icon-bluesky.svg";
-import tiktok from "../assets/images/icon-tiktok.svg";
+import ReadyToCook from '../components/ReadyToCook';
+
 
 const Home = () => {
   return (
@@ -70,20 +70,9 @@ const Home = () => {
 
         </section>
 
-        <section className='section4'>
-            <h2 className='h2'>Ready to cook smarter?</h2>
-            <p className='p'> Hit the button, pick a recipe, and get dinner on the table—fast. </p>
-            <ButtonToRecipes text="Browser Recipes" className="umseteseis" />
-        </section>
+        <ReadyToCook />
 
-        <footer className='footerHome'>
-            <div className='footerHomeSocial'>
-                <img src={instagram} alt="Instagram" />
-                <img src={bluesky} alt="Bluesky" />
-                <img src={tiktok} alt="Tiktok" />
-            </div>
-            Made with ❤️ and 🥑
-        </footer>
+        <Footer />
         </main>
     </div>
    

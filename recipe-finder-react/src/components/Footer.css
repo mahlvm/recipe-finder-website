@@ -1,0 +1,24 @@
+
+.footerHome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: var(--spacing-20);
+  gap: var(--spacing-24);
+  font-family: var(--text-9-font);
+  font-size: var(--text-9-size);
+  font-weight: var(--text-9-weight);
+  line-height: var(--text-9-line);
+  letter-spacing: var(--text-9-spacing);
+  color: var(--Neutral900);
+
+}
+
+.footerHomeSocial{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-24);
+}

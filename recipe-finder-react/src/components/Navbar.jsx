@@ -3,9 +3,11 @@ import hamburgerMenu from "../assets/images/icon-hamburger-menu.svg";
 import { useState } from "react";
 import "./Navbar.css"
 import ButtonToRecipes from "./ButtonToRecipes";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     const [menuToggle, setMenuToggle] = useState(false)
+    const navigate = useNavigate();
 
     const toggleMenu = () => {
         setMenuToggle(!menuToggle);
@@ -25,9 +27,9 @@ const Navbar = () => {
                 <div className="nav-list">
                 {menuToggle && (
                 <ul className="nav-list-ul">
-                <li className="li">Home</li>
-                <li className="li">About</li>
-                <li className="li">Recips</li>
+                <li className="li" onClick={() => navigate("/")}>Home</li>
+                <li className="li" onClick={() => navigate("/about")}>About</li>
+                <li className="li" onClick={() => navigate("/recipes")}>Recipes</li>
                 <li className="liButton">
                     <ButtonToRecipes text="Browse recipes" className="" />
                 </li>

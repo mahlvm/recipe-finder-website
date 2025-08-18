@@ -1,9 +1,11 @@
+import { useNavigate } from "react-router-dom"
 import "./ButtonToRecipes.css"
 import PropTypes from "prop-types"
 
 const ButtonToRecipes = ({text, className = ""}) => {
+    const navigate = useNavigate();
     const handleClick = () => {
-        window.location.href = "/recipes";
+        navigate("/recipes");
     }
 
     return(

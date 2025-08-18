@@ -1,0 +1,74 @@
+/* -------------------- */
+/* Mobile (base) - 375px */
+/* -------------------- */
+.aboutContainer {
+    background-color: var(--Neutral100);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.mainAbout {
+    width: 100%;
+    padding-top: var(--spacing-48);
+    padding-left: var(--spacing-16);
+    padding-right: var(--spacing-16);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-64);
+}
+
+.section1about,
+.section2about,
+.section3about
+.section4about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--spacing-24);
+}
+
+
+.h2{
+  font-family: var(--text-2-font);
+  font-size: var(--text-2-mobile-size);
+  font-weight: var(--text-2-weight);
+  line-height: var(--text-2-line);
+  letter-spacing: var(--text-2-spacing);
+  color: var(--Neutral900);
+}
+
+.h4{
+  font-family: var(--text-4-font);
+  font-size: var(--text-4-size);
+  font-weight: var(--text-4-weight);
+  line-height: var(--text-4-line);
+  letter-spacing: var(--text-4-spacing);
+  color: var(--Neutral900);
+}
+
+.p{
+  font-family: var(--text-6-font);
+  font-size: var(--text-6-size);
+  font-weight: var(--text-6-weight);
+  line-height: var(--text-6-line);
+  letter-spacing: var(--text-6-spacing);
+  color: var(--Neutral800);
+}
+
+.divPhotoAbout{
+    width: 100%;
+}
+
+.photoAbout1,
+.photoAbout2 {
+    width: 100%;
+    border-radius: var(--radius-10);
+}
