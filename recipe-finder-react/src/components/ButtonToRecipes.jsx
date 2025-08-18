@@ -2,8 +2,12 @@ import "./ButtonToRecipes.css"
 import PropTypes from "prop-types"
 
 const ButtonToRecipes = ({text, className = ""}) => {
+    const handleClick = () => {
+        window.location.href = "/recipes";
+    }
+
     return(
-        <button className={`customButton ${className}`}>
+        <button  onClick={handleClick} className={`customButton ${className}`}>
             {text}
         </button>
     )

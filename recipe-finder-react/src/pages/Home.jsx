@@ -1,11 +1,17 @@
 import './Home.css'
 import Navbar from "../components/Navbar";
 import ButtonToRecipes from "../components/ButtonToRecipes";
+import carrot from "../assets/images/icon-whole-food-recipes.svg";
+import fuss from "../assets/images/icon-minimum-fuss.svg";
+import search from "../assets/images/icon-search-in-seconds.svg";
+import imagehomeherosmall from "../assets/images/image-home-hero-small.webp";
+import patternsquiggle1 from "../assets/images/pattern-squiggle-1.svg";
 
 const Home = () => {
   return (
     <div className='homeContainer'>
         <Navbar/>
+        <img className="backgroundIcon" src={patternsquiggle1} alt="patternsquiggle1" />
         <main className='mainHome'>
         <section className='section1'>
             <h1>Healthy meals, zero fuss</h1>
@@ -14,24 +20,27 @@ const Home = () => {
             processed junk, no guesswork.
             </p>
             <ButtonToRecipes text="Start exploring" className="umnoveoito" />
+            <div className='imgPhotoSone'>
+                <img className="photo" src={imagehomeherosmall} alt="image-home-hero-small" />
+            </div>
+            
         </section>
 
-        <section>
+        <section className='section2'>
             <h2>What you'll get</h2>
-            <ul>
-            <li>
-                <strong>Whole-food recipes</strong> – Each dish uses everyday,
-                unprocessed ingredients.
-            </li>
-            <li>
-                <strong>Minimum fuss</strong> – All recipes are designed to make
-                eating healthy quick and easy.
-            </li>
-            <li>
-                <strong>Search in seconds</strong> – Filter by name or ingredient
-                and jump straight to the recipe you need.
-            </li>
-            </ul>
+            <div>
+                <img src={carrot} alt="Carrots" />
+                <h3>Whole-food recipes</h3>
+                <p>Each dish uses everyday, unprocessed ingredients.</p>
+
+                <img src={fuss} alt="Fuss" />
+                <h3>Minimum fuss</h3>
+                <p>All recipes are designed to make eating healthy quick and easy.</p>
+
+                <img src={search} alt="Search" />
+                <h3>Search in seconds</h3>
+                <p>Filter by name or ingredient and jump straight to the recipe you need.</p>
+            </div>
         </section>
 
         <section>
