@@ -24,3 +24,16 @@
     padding-left: var(--spacing-32);
     padding-right: var(--spacing-32);  
 }
+
+.customButton.umseteseis{
+    width: 12rem;
+    height: 3.563rem;
+    font-family: var(--text-7-font);
+    font-size: var(--text-7-size);
+    line-height: var(--text-7-line);
+    letter-spacing: var(--text-7-spacig);
+    padding-top: var(--spacing-16);
+    padding-bottom: var(--spacing-16);
+    padding-left: var(--spacing-24);
+    padding-right: var(--spacing-24);  
+}
