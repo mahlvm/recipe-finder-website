@@ -18,6 +18,9 @@
     padding-top: var(--spacing-48);
     padding-left: var(--spacing-16);
     padding-right: var(--spacing-16);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-64);
 }
 
 .section1{
@@ -29,7 +32,7 @@
   gap: var(--spacing-16);
 }
 
-.section1 h1{
+.h1{
   font-family: var(--text-1-font);
   font-size: var(--text-1-mobile-size);
   font-weight: var(--text-1-weight);
@@ -38,7 +41,7 @@
   color: var(--Neutral900);
 }
 
-.section1 p{
+.p{
   font-family: var(--text-6-font);
   font-size: var(--text-6-size);
   font-weight: var(--text-6-weight);
@@ -70,14 +73,9 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 35%;
+  top: 30%;
   z-index: 0;
-
-
-
 }
-
-
 
 
 .section2{
@@ -86,9 +84,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  gap: var(--spacing-32);
 }
 
-.section2 h2{
+.h2{
   font-family: var(--text-2-font);
   font-size: var(--text-2-mobile-size);
   font-weight: var(--text-2-weight);
@@ -97,7 +96,33 @@
   color: var(--Neutral900);
 }
 
-.section2 h3{
+
+.divSection2{
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  gap: var(--spacing-24);
+}
+
+.blockSection2{
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  gap: var(--spacing-10);
+}
+
+.divSection2 img{
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: white;
+  padding: var(--spacing-10);
+  border-radius: var(--radius-12);
+  border: solid 1px var(--Neutral200);
+  box-shadow: 0px 1px 0px 0px var(--Neutral200);
+}
+
+
+.h3{
   font-family: var(--text-3-font);
   font-size: var(--text-3-size);
   font-weight: var(--text-3-weight);
@@ -106,14 +131,27 @@
   color: var(--Neutral900);
 }
 
-.section2 p{
-  font-family: var(--text-6-font);
-  font-size: var(--text-6-size);
-  font-weight: var(--text-6-weight);
-  line-height: var(--text-6-line);
-  letter-spacing: var(--text-6-spacing);
-  color: var(--Neutral800);
+
+.section3{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: var(--spacing-20);
 }
+
+.imgPhotoSthree{
+  width: 100%;
+}
+
+
+.imgPhotoSthree .photo2{
+  width: 100%;
+  border-radius: var(--radius-8);
+}
+
+
 
 /* -------------------- */
 /* Tablet - 768px */
