@@ -12,7 +12,7 @@
     letter-spacing: var(--text-5-spacig);
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 

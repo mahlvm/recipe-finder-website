@@ -16,6 +16,7 @@ const Home = () => {
     <div className='homeContainer'>
         <Navbar/>
         <img className="backgroundIcon" src={patternsquiggle1} alt="patternsquiggle1" />
+        <div className='highlight'></div>
         <main className='mainHome'>
         <section className='section1'>
             <h1 className='h1'>Healthy meals, zero fuss</h1>

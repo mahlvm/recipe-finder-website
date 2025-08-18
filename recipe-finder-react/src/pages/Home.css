@@ -39,7 +39,20 @@
   line-height: var(--text-1-line);
   letter-spacing: var(--text-1-spacing);
   color: var(--Neutral900);
+  z-index: 1;
 }
+
+.highlight {
+  width: 183px;
+  height: 23px; 
+  position: absolute;
+  top: 5.7%;
+  left: 4.3%;
+  background-color: rgba(var(--Orange500-rgb), 0.4);
+  border-radius: var(--radius-4);
+  z-index: 0;
+}
+
 
 .p{
   font-family: var(--text-6-font);
@@ -73,7 +86,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 30%;
+  top: 18%;
   z-index: 0;
 }
 
