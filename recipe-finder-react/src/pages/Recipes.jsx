@@ -36,7 +36,8 @@ const Recipes = ()=> {
 };
 
 const handleViewRecipe = (recipe) => {
-  navigate(`/recipe/${recipe.id}`, {state: {recipe}});
+  const findId = event.target.value
+  navigate(`/recipe/${findId}`);
 }
 
 
@@ -109,7 +110,7 @@ const handleViewRecipe = (recipe) => {
                   <p>Cook:{recipe.cookMinutes}</p>
                 </div>
                 <div>
-                  <button onClick={() => handleViewRecipe(recipe)}>View Recipe</button>
+                  <button value={recipe.id} onClick={handleViewRecipe}>View Recipe</button>
                 </div>
               </div>
             ))}

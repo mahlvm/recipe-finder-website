@@ -1,24 +1,26 @@
-import { useLocation } from "react-router-dom";
+
+import { useParams } from "react-router-dom";
 import ImageRecipe from "../components/ImageRecipe";
+import recipesData from "../data/data.json";
+import { useEffect, useState } from "react";
 
 const Recipe = () => {
-  const location = useLocation();
-  // verificar se location.state existe
-  const recipe = location.state?.recipe; 
-
-  if (!recipe) {
-    return <p>Receita não encontrada. Volte à página de receitas.</p>;
-  }
+  const params = useParams();
+  const id = params.id;
+  const recipeId = recipesData.find(recipe => recipe.id === Number(id));
+    if (!recipeId) return <p>Carregando...</p>;
 
   return (
     <main>
       <section>
-        <div>
-          <ImageRecipe slug={recipe.slug} alt={recipe.title} />
+          <div>
+             <div>
+              <ImageRecipe slug={recipeId.slug} alt={recipeId.title} />
+            </div>
+            <h1>Recipe Details</h1>
+            <p>{recipeId.title}</p>
+            <p>Receita específica carregada a partir do ID na URL.</p>
         </div>
-        <h1>Recipe Details</h1>
-        <p>{recipe.title}</p>
-        <p>Receita específica carregada a partir do ID na URL.</p>
       </section>
 
       <section>
