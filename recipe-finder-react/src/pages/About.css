@@ -35,6 +35,20 @@
     gap: var(--spacing-24);
 }
 
+.spanAbout{
+  background-color: var(--Orange500);
+  padding-left: var(--spacing-6);
+  padding-right: var(--spacing-6);
+  padding-top: var(--spacing-2);
+  padding-bottom: var(--spacing-2);
+  border-radius: var(--radius-6);
+  font-family: var(--text-5-font);
+  font-size: var(--text-5-size);
+  font-weight: var(--text-5-weight);
+  line-height: var(--text-5-line);
+  letter-spacing: var(--text-5-spacing);
+  color: var(--Neutral900);
+}
 
 .h2{
   font-family: var(--text-2-font);
@@ -71,4 +85,14 @@
 .photoAbout2 {
     width: 100%;
     border-radius: var(--radius-10);
+}
+
+.section2aboutcolumns{
+  display: flex;
+  flex-direction: column;
+}
+
+.section2aboutrows{
+  display: flex;
+  flex-direction: row;
 }
