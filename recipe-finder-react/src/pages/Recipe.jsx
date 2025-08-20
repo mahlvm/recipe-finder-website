@@ -10,6 +10,7 @@ const Recipe = () => {
   const recipeId = recipesData.find(recipe => recipe.id === Number(id));
     if (!recipeId) return <p>Carregando...</p>;
 
+  
   return (
     <main>
       <section>
@@ -18,13 +19,21 @@ const Recipe = () => {
               <ImageRecipe slug={recipeId.slug} alt={recipeId.title} />
             </div>
             <h1>Recipe Details</h1>
-            <p>{recipeId.title}</p>
-            <p>Receita específica carregada a partir do ID na URL.</p>
+            <h2>{recipeId.title}</h2>
+      
         </div>
       </section>
 
       <section>
-        <h2>Other Recipes</h2>
+        <h1>Other Recipes</h1>
+        {recipesData
+          .filter((recipe) => recipe.id !== recipeId)
+          .slice(0, 3)
+          .map(item => (
+            <h2>{item.title}</h2>
+          ))
+        
+          }
         <p>Selecione três outras receitas para exibir aqui.</p>
       </section>
 
