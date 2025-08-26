@@ -45,7 +45,7 @@ const handleViewRecipe = (recipe) => {
   return (
     <div className="recipesContainer">
       <Navbar />
-      <main>
+      <main className="mainRecipes">
       <section>
         <h1>Explore our simple, healthy recipes</h1>
         <p>

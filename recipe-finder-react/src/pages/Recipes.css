@@ -1,0 +1,21 @@
+.recipesContainer{
+    background-color: var(--Neutral100);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.mainRecipes{
+    width: 100%;
+    padding-top: var(--spacing-48);
+    padding-left: var(--spacing-16);
+    padding-right: var(--spacing-16);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-64);
+}
