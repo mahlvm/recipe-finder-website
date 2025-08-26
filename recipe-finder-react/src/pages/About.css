@@ -99,3 +99,14 @@
   flex-direction: row;
   gap: var(--spacing-20);
 }
+
+.sec4ul{
+  list-style-position: inside;
+  font-family: var(--text-6-font);
+  font-size: var(--text-6-size);
+  font-weight: var(--text-6-weight);
+  line-height: var(--text-6-line);
+  letter-spacing: var(--text-6-spacing);
+  color: var(--Neutral800);
+  padding-left: var(--spacing-16);
+}

@@ -105,7 +105,7 @@ const About = () => {
                     </div>
 
                     <div className="sectionaboutrows">
-                        <div className="columnimg">
+                        <div className="columnimg">         
                             <img src={iconbulletpoint} alt="iconbulletpoint" />
                         </div>
                         <div className="columntxt">
@@ -119,12 +119,15 @@ const About = () => {
 
             <section className='section4about'>
                 <h2 className="h2">Beyond the plate</h2>  
-                <p className="p">We believe food is a catalyst for community and well-being. By sharing approachable recipes, we hope to:</p>    
-                <ul>
-                    <li>Encourage family dinners and social cooking.</li>
-                    <li>Reduce reliance on single-use packaging and delivery waste.</li>
-                    <li>Spark curiosity about seasonal produce and local agriculture.</li>
+                <p className="p">We believe food is a catalyst for community and well-being. By sharing approachable recipes, we hope to:</p> 
+    
+                <ul className="sec4ul">
+                    <li className="sec4li">Encourage family dinners and social cooking.</li>
+                    <li className="sec4li">Reduce reliance on single-use packaging and delivery waste.</li>
+                    <li className="sec4li">Spark curiosity about seasonal produce and local agriculture.</li>
                 </ul>  
+     
+                
                 <div className="divPhotoAbout">
                     <img  className="photoAbout2" src={imageaboutbeyondtheplatesmall} alt="imageaboutbeyondtheplatesmall" />
                 </div> 
