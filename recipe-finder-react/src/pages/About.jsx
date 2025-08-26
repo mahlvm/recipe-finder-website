@@ -26,9 +26,9 @@ const About = () => {
             <section className='section2about'>
                 <h2 className="h2">Why we exist</h2> 
 
-                <div className="section2aboutcolumns">
+                <div className="sectionaboutcolumns">
 
-                    <div className="section2aboutrows">
+                    <div className="sectionaboutrows">
                         <div className="columnimg">
                             <img src={iconbulletpoint} alt="iconbulletpoint" />
                         </div>    
@@ -42,7 +42,7 @@ const About = () => {
                     </div>
                     
             
-                    <div className="section2aboutrows">
+                    <div className="sectionaboutrows">
                         <div className="columnimg">
                             <img src={iconbulletpoint} alt="iconbulletpoint" />
                         </div>
@@ -54,7 +54,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className="section2aboutrows">
+                    <div className="sectionaboutrows">
                         <div className="columnimg">
                             <img src={iconbulletpoint} alt="iconbulletpoint" />
                         </div>
@@ -71,39 +71,50 @@ const About = () => {
 
              <section className='section3about'>
                 <h2 className="h2">Our food philosophy</h2>  
-                <div>
-                    <div>
-                        <img src={iconbulletpoint} alt="iconbulletpoint" />
-                        <div>
+                 <div className="sectionaboutcolumns">
+
+                    <div className="sectionaboutrows">
+                        <div className="columnimg">
+                            <img src={iconbulletpoint} alt="iconbulletpoint" />
+                        </div>    
+                        <div className="columntxt">
                             <h4 className="h4">Whole ingredients first.</h4>
                             <p className="p">Fresh produce, grains, legumes, herbs, and quality fats form the backbone of every recipe.</p>
                         </div>
                     </div>
-
-                    <div>
-                        <img src={iconbulletpoint} alt="iconbulletpoint" />
-                        <div>
+                    
+            
+                    <div className="sectionaboutrows">
+                        <div className="columnimg">
+                            <img src={iconbulletpoint} alt="iconbulletpoint" />
+                        </div>
+                        <div className="columntxt">
                             <h4 className="h4">Flavor without compromise.</h4>
                             <p className="p">Spices, citrus, and natural sweetness replace excess salt, sugar, and additives.</p>
                         </div>
                     </div>
 
-                     <div>
-                        <img src={iconbulletpoint} alt="iconbulletpoint" />
-                        <div>
+                    <div className="sectionaboutrows">
+                        <div className="columnimg">
+                            <img src={iconbulletpoint} alt="iconbulletpoint" />
+                        </div>
+                        <div className="columntxt">
                             <h4 className="h4">Respect for time.</h4>
                             <p className="p">Weeknight meals should slot into real schedules; weekend cooking can be leisurely but never wasteful.</p>
                         </div>
                     </div>
 
-                    <div>
-                        <img src={iconbulletpoint} alt="iconbulletpoint" />
-                        <div>
+                    <div className="sectionaboutrows">
+                        <div className="columnimg">
+                            <img src={iconbulletpoint} alt="iconbulletpoint" />
+                        </div>
+                        <div className="columntxt">
                             <h4 className="h4">Sustainable choices.</h4>
                             <p className="p">Short ingredient lists cut down on food waste and carbon footprint, while plant-forward dishes keep things planet-friendly.</p>
                         </div>
                     </div>
-                </div>       
+
+                </div> 
             </section>
 
             <section className='section4about'>

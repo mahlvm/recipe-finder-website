@@ -25,7 +25,7 @@
 
 .section1about,
 .section2about,
-.section3about
+.section3about,
 .section4about{
     width: 100%;
     display: flex;
@@ -33,6 +33,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: var(--spacing-24);
+
 }
 
 .spanAbout{
@@ -87,12 +88,14 @@
     border-radius: var(--radius-10);
 }
 
-.section2aboutcolumns{
+.sectionaboutcolumns{
   display: flex;
   flex-direction: column;
+  gap: var(--spacing-24);
 }
 
-.section2aboutrows{
+.sectionaboutrows{
   display: flex;
   flex-direction: row;
+  gap: var(--spacing-20);
 }
