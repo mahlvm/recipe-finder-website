@@ -1,0 +1,14 @@
+.componentImgDiv {
+  width: 100%;
+}
+
+.componentImgPicture {
+  width: 100%;
+  height: 100%;
+}
+
+.componentImgPicture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px; /* opcional, para arredondar */
+}

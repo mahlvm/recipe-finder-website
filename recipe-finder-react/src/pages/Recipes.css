@@ -19,3 +19,100 @@
     flex-direction: column;
     gap: var(--spacing-64);
 }
+
+.recipesSecOne,
+.recipesSecTwo,
+.recipesSecThree{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--spacing-24);
+}
+
+.recipeDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--spacing-10);
+    background-color: white;
+    padding: var(--spacing-8);
+    border: solid 1px var(--Neutral300);
+    border-radius: var(--radius-10);
+}
+
+.iconDivRecipes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--spacing-16);
+}
+
+
+.h2{
+  font-family: var(--text-2-font);
+  font-size: var(--text-2-mobile-size);
+  font-weight: var(--text-2-weight);
+  line-height: var(--text-2-line);
+  letter-spacing: var(--text-2-spacing);
+  color: var(--Neutral900);
+}
+
+.h5{
+  font-family: var(--text-5-font);
+  font-size: var(--text-5-size);
+  font-weight: var(--text-5-weight);
+  line-height: var(--text-5-line);
+  letter-spacing: var(--text-5-spacing);
+  color: var(--text-5-font);
+}
+
+
+.p{
+  font-family: var(--text-6-font);
+  font-size: var(--text-6-size);
+  font-weight: var(--text-6-weight);
+  line-height: var(--text-6-line);
+  letter-spacing: var(--text-6-spacing);
+  color: var(--Neutral800);
+}
+
+.smalltxt{
+  font-family: var(--text-9-font);
+  font-size: var(--text-9-size);
+  font-weight: var(--text-9-weight);
+  line-height: var(--text-9-line);
+  letter-spacing: var(--text-9-spacing);
+  color: var(--text-9-font);
+}
+
+.imgDivRecipes{
+    width: 100%;
+}
+
+.recipesDivButton{
+    width: 100%;
+}
+
+.viewRecipeButton{
+    width: 100%;
+    padding-top: var(--spacing-12);
+    padding-bottom: var(--spacing-12);
+    border-radius: var(--radius-full);
+    background-color: var(--Neutral900);
+    color: var(--Neutral0);
+    border: none;
+    font-family: var(--text-8-font);
+    font-size: var(--text-8-size);
+    line-height: var(--text-8-line);
+    letter-spacing: var(--text-8-spacig);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} 

@@ -46,9 +46,9 @@ const handleViewRecipe = (recipe) => {
     <div className="recipesContainer">
       <Navbar />
       <main className="mainRecipes">
-      <section>
-        <h1>Explore our simple, healthy recipes</h1>
-        <p>
+      <section className="recipesSecOne">
+        <h2 className="h2">Explore our simple, healthy recipes</h2>
+        <p className="p">
           Discover eight quick, whole-food dishes that fit real-life schedules
           and taste amazing. Use the search bar to find a recipe by name or
           ingredient, or simply scroll the list and let something delicious
@@ -56,7 +56,7 @@ const handleViewRecipe = (recipe) => {
         </p>
       </section>
 
-      <section>
+      <section className="recipesSecTwo">
         <div>
           <select onChange={(e) => setMaxPrepTime(e.target.value)}>
             <option value="">Max Prep Time</option>
@@ -94,23 +94,30 @@ const handleViewRecipe = (recipe) => {
         </div>
       </section>
 
-      <section>
+      <section className="recipesSecThree">
             {recipes.map((recipe) => (
-              <div  key={recipe.id}>
-                <div>
+
+              <div  className="recipeDiv" key={recipe.id}>
+                <div className="imgDivRecipes">
                   <ImageRecipe slug={recipe.slug} alt={recipe.title} />
                 </div>
-                <h2>{recipe.title}</h2>
-                <p>{recipe.overview}</p>
-                <div>
-                  <p>Servings:{recipe.servings}</p>
-                  <p>Prep:{recipe.prepMinutes}</p>
+                
+                <h5 className="h5">{recipe.title}</h5>
+                <p className="smalltxt">{recipe.overview}</p>
+
+                <div className="iconDivRecipes">
+                  <div className="iconDivRecipesLeft">
+                    <p className="smalltxt">Servings:{recipe.servings}</p>
+                    <p className="smalltxt">Cook:{recipe.cookMinutes}</p>
+                  </div>
+
+                  <div className="iconDivRecipesRight">
+                    <p className="smalltxt">Prep:{recipe.prepMinutes}</p>
+                  </div>
                 </div>
-                <div>
-                  <p>Cook:{recipe.cookMinutes}</p>
-                </div>
-                <div>
-                  <button value={recipe.id} onClick={handleViewRecipe}>View Recipe</button>
+               
+                <div className="recipesDivButton">
+                  <button className="viewRecipeButton" value={recipe.id} onClick={handleViewRecipe}>View Recipe</button>
                 </div>
               </div>
             ))}
