@@ -106,7 +106,7 @@ const handleViewRecipe = (recipe) => {
       <section className="recipesSecThree">
             {recipes.map((recipe) => (
 
-              <div  className="recipeDiv" key={recipe.id}>
+              <div  className="recipesDiv" key={recipe.id}>
                 <div className="imgDivRecipes">
                   <ImageRecipe slug={recipe.slug} alt={recipe.title} />
                 </div>

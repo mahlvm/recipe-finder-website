@@ -30,7 +30,7 @@
     gap: var(--spacing-24);
 }
 
-.recipeDiv{
+.recipesDiv{
     width: 100%;
     display: flex;
     flex-direction: column;
