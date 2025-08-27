@@ -21,7 +21,6 @@
 }
 
 .recipesSecOne,
-.recipesSecTwo,
 .recipesSecThree{
     width: 100%;
     display: flex;
@@ -53,6 +52,11 @@
     gap: var(--spacing-16);
 }
 
+.iconTxt{
+    display: flex;
+    flex-direction: row;
+    gap: var(---spacing-6);
+}
 
 .h2{
   font-family: var(--text-2-font);
@@ -69,7 +73,7 @@
   font-weight: var(--text-5-weight);
   line-height: var(--text-5-line);
   letter-spacing: var(--text-5-spacing);
-  color: var(--text-5-font);
+    color: var(--Neutral900);
 }
 
 
@@ -79,7 +83,7 @@
   font-weight: var(--text-6-weight);
   line-height: var(--text-6-line);
   letter-spacing: var(--text-6-spacing);
-  color: var(--Neutral800);
+  color: var(--Neutral600);
 }
 
 .smalltxt{
@@ -88,7 +92,75 @@
   font-weight: var(--text-9-weight);
   line-height: var(--text-9-line);
   letter-spacing: var(--text-9-spacing);
-  color: var(--text-9-font);
+  color: var(--Neutral600);
+}
+
+
+.recipesSecTwo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--spacing-12);
+}
+
+.recipesFilter{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-bottom: var(--spacing-10);
+    padding-top: var(--spacing-10);
+    border-radius: var(--radius-10);
+    border: solid 1px var(--Neutral300);
+    gap: var(--spacing-8);
+
+}
+
+.recipesFilterInput{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    padding-bottom: var(--spacing-10);
+    padding-top: var(--spacing-10);
+    padding-left: var(--spacing-16);
+    border-radius: var(--radius-10);
+    border: solid 1px var(--Neutral300);
+    gap: var(--spacing-8);
+
+}
+
+
+
+.recipesSelect{
+    appearance: none;
+    border: none;
+    font-family: var(--text-7-font);
+    font-size: var(--text-7-size);
+    font-weight: var(--text-7-weight);
+    line-height: var(--text-7-line);
+    letter-spacing: var(--text-7-spacing);
+    cursor: pointer;
+}
+
+.recipesInput{
+    width: 100%;
+    border: none;
+    font-family: var(--text-7-font);
+    font-size: var(--text-7-size);
+    font-weight: var(--text-7-weight);
+    line-height: var(--text-7-line);
+    letter-spacing: var(--text-7-spacing);
+}
+
+.recipesInput:focus{
+    outline: none;
 }
 
 .imgDivRecipes{
@@ -116,3 +188,8 @@
     justify-content: center;
     align-items: center;
 } 
+
+.recipesFooter{
+    width: 100%;
+    padding-top: var(--spacing-40);
+}

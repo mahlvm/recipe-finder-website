@@ -5,6 +5,11 @@ import ImageRecipe from "../components/ImageRecipe"
 import { useState } from "react";
 import recipesData from "../data/data.json";
 import { useNavigate } from "react-router-dom";
+import cooktime from "../assets/images/icon-cook-time.svg";
+import preptime from "../assets/images/icon-prep-time.svg";
+import serving from "../assets/images/icon-servings.svg";
+import arrow from "../assets/images/icon-chevron-down.svg";
+import iconsearch from "../assets/images/icon-search.svg";
 
 
 const Recipes = ()=> {
@@ -57,18 +62,19 @@ const handleViewRecipe = (recipe) => {
       </section>
 
       <section className="recipesSecTwo">
-        <div>
-          <select onChange={(e) => setMaxPrepTime(e.target.value)}>
+        <div className="recipesFilter">
+          <select className="recipesSelect" onChange={(e) => setMaxPrepTime(e.target.value)}>
             <option value="">Max Prep Time</option>
             <option value="0">0 minutes</option>
             <option value="5">5 minutes</option>
             <option value="10">10 minutes</option>
             <option value="clear">Clear</option>
           </select>
+          <img src={arrow} alt="arrow" />
         </div>
 
-        <div>
-           <select onChange={(e) => setMaxCookTime(e.target.value)}>
+        <div className="recipesFilter">
+           <select className="recipesSelect" onChange={(e) => setMaxCookTime(e.target.value)}>
             <option value="">Max Cook Time</option>
             <option value="0">0 minutes</option>
             <option value="5">5 minutes</option>
@@ -77,10 +83,13 @@ const handleViewRecipe = (recipe) => {
             <option value="20">20 minutes</option>
             <option value="clear">Clear</option>
           </select>
+          <img src={arrow} alt="arrow" />
         </div>
 
-        <div>
+        <div className="recipesFilterInput">
+          <img src={iconsearch} alt="icon-search" />
           <input 
+            className="recipesInput"
             placeholder="Search by name or ingredient…"
             type="text"
             value={findRecipe}
@@ -107,12 +116,24 @@ const handleViewRecipe = (recipe) => {
 
                 <div className="iconDivRecipes">
                   <div className="iconDivRecipesLeft">
-                    <p className="smalltxt">Servings:{recipe.servings}</p>
-                    <p className="smalltxt">Cook:{recipe.cookMinutes}</p>
-                  </div>
+                    <div className="iconTxt">
+                      <img src={serving} alt="Serving" />
+                      <p className="smalltxt">Servings: {recipe.servings}</p>
+                    </div>
+
+                    <div className="iconTxt">
+                      <img src={cooktime} alt="Cook Time" />
+                      <p className="smalltxt">Cook: {recipe.cookMinutes}</p>
+                    </div>
+                   </div> 
+                    
+              
 
                   <div className="iconDivRecipesRight">
-                    <p className="smalltxt">Prep:{recipe.prepMinutes}</p>
+                    <div className="iconTxt">
+                       <img src={preptime} alt="Prep Time" />
+                      <p className="smalltxt">Prep: {recipe.prepMinutes}</p>
+                    </div>
                   </div>
                 </div>
                
@@ -123,7 +144,9 @@ const handleViewRecipe = (recipe) => {
             ))}
       </section>
       </main>
-      <Footer />
+      <div className="recipesFooter"> 
+         <Footer />
+      </div>
     </div>
     
   );

@@ -75,7 +75,7 @@
   font-weight: var(--text-6-weight);
   line-height: var(--text-6-line);
   letter-spacing: var(--text-6-spacing);
-  color: var(--Neutral800);
+  color: var(--Neutral600);
 }
 
 .divPhotoAbout{
@@ -107,6 +107,6 @@
   font-weight: var(--text-6-weight);
   line-height: var(--text-6-line);
   letter-spacing: var(--text-6-spacing);
-  color: var(--Neutral800);
+  color: var(--Neutral600);
   padding-left: var(--spacing-16);
 }
