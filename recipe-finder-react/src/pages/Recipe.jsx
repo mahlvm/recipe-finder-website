@@ -32,6 +32,7 @@ const Recipe = () => {
       <Navbar />
       <main className="mainRecipe">
         <section className="recipeSecOne">
+          <p className="p"><span style={{ color: "#81938E" }}>Recipes /</span> {recipeId.title}</p>
           <div className="recipeDiv">
               <div className="imgDivRecipe">
                 <ImageRecipe slug={recipeId.slug} alt={recipeId.title} />
@@ -92,7 +93,7 @@ const Recipe = () => {
         </section>
 
         <section className="recipeSecTwo">
-          <h1>Other Recipes</h1>
+          <h3 className="h3">More Recipes</h3>
           {recipesData
             .filter((recipe) => recipe.id !== recipeId)
             .slice(0, 3)
@@ -137,7 +138,9 @@ const Recipe = () => {
             }
         </section>
       </main>
-      <Footer /> 
+      <div className="recipeFooter">
+        <Footer /> 
+      </div>
      </div>
   );
 };

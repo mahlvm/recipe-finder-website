@@ -82,6 +82,15 @@
   color: var(--Neutral900);
 }
 
+.h3{
+  font-family: var(--text-3-font);
+  font-size: var(--text-3-size);
+  font-weight: var(--text-3-weight);
+  line-height: var(--text-3-line);
+  letter-spacing: var(--text-3-spacing);
+  color: var(--Neutral900);
+}
+
 .iconDivRecipe{
     width: 100%;
     display: flex;
@@ -176,3 +185,7 @@
     justify-content: center;
     align-items: center;
 } 
+.recipeFooter{
+    width: 100%;
+    padding-top: var(--spacing-40);
+}
