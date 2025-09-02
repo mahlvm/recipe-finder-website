@@ -31,3 +31,38 @@
   color: var(--Neutral900);
   text-align: center;
 }
+
+.patternknife,
+.patternfork {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+.sectionReady{
+  position: relative;
+  z-index: 0;
+  overflow: hidden; 
+}
+
+.patternknife{
+  display: block;
+  position: absolute;
+  width: 10.688rem;
+  right: -3rem;
+  top: -3.125rem;
+  z-index: 1;
+}
+
+.patternfork{
+  display: block;
+  position: absolute;
+  width: 11.188rem;
+  left: -3rem;
+  top: 11.375rem;
+  z-index: 1;
+}
+
+
+
+}

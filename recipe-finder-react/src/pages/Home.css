@@ -164,7 +164,18 @@
   border-radius: var(--radius-8);
 }
 
+.highlight2{
+  display: none;
+}
 
+.thirtymin{
+  font-family: var(--text-5-font);
+  font-size: var(--text-5-size);
+  font-weight: var(--text-5-weight);
+  line-height: var(--text-5-line);
+  letter-spacing: var(--text-5-spacing);
+  color: var(--Neutral800);
+}
 
 
 
@@ -172,10 +183,41 @@
 /* Tablet - 768px */
 /* -------------------- */
 @media (min-width: 768px) {
-    .homeContainer {
-        font-size: 18px;
-        padding: var(--spacing-32);
+
+    .mainHome {
+    padding-left: var(--spacing-32);
+    padding-right: var(--spacing-32);
     }
+
+    .backgroundIcon{
+      top: 10%;
+    }
+
+    .highlight {
+      top: 6%;
+    }
+
+    .section3{
+      position: relative;
+    }
+
+    .highlight2{
+      position: absolute;
+      display: block;
+      z-index: 0;
+      width: 103px;
+      height: 10px;
+      right: 7%;
+      top: 11.2%;
+      background-color: rgba(var(--Orange500-rgb), 1);
+      border-radius: var(--radius-4);
+    }
+
+    .p{
+      z-index: 1;
+    }
+
+
 }
 
 /* -------------------- */

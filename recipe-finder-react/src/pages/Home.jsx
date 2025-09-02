@@ -6,8 +6,10 @@ import carrot from "../assets/images/icon-whole-food-recipes.svg";
 import fuss from "../assets/images/icon-minimum-fuss.svg";
 import search from "../assets/images/icon-search-in-seconds.svg";
 import imagehomeherosmall from "../assets/images/image-home-hero-small.webp";
+import imagehomeherolarge from "../assets/images/image-home-hero-large.webp";
 import patternsquiggle1 from "../assets/images/pattern-squiggle-1.svg";
 import imagehomereallifesmall from "../assets/images/image-home-real-life-small.webp";
+import imagehomereallifelarge from "../assets/images/image-home-real-life-large.webp";
 import ReadyToCook from '../components/ReadyToCook';
 
 
@@ -25,9 +27,10 @@ const Home = () => {
             processed junk, no guesswork.
             </p>
             <ButtonToRecipes text="Start exploring" className="umnoveoito" />
-            <div className='imgPhotoSone'>
-                <img className="photo" src={imagehomeherosmall} alt="image-home-hero-small" />
-            </div>
+            <picture className='imgPhotoSone'>
+                 <source media="(max-width: 375px)" srcSet={imagehomeherosmall} />
+                <img className="photo" src={imagehomeherolarge} alt="image-home-hero-large" />
+            </picture>
             
         </section>
 
@@ -53,24 +56,28 @@ const Home = () => {
         </section>
 
         <section className='section3'>
+            <div className='highlight2'></div>
             <h2 className='h2'>Built for real life</h2>
             <p className='p'>
-            Cooking shouldn't be complicated. These recipes come in under 30
-            minutes of active time, fit busy schedules, and taste good enough to
-            repeat.
+            Cooking shouldn't be complicated. These recipes come in under <span className='thirtymin'>30 minutes </span>
+            of active time, fit busy schedules, and taste good enough to repeat.
             </p>
             <p className='p'>
             Whether you're new to the kitchen or just need fresh ideas, we've got
             you covered.
             </p>
 
-            <div className='imgPhotoSthree'>
-                <img className="photo2" src={imagehomereallifesmall} alt="imagehomereallifesmall" />
-            </div>    
+            <picture className='imgPhotoSthree'>
+                <source media="(max-width: 375px)" srcSet={imagehomereallifesmall} />
+                <img className="photo2" src={imagehomereallifelarge} alt="imagehomereallifelarge" />
+            </picture>    
 
         </section>
 
+
         <ReadyToCook />
+
+      
 
         <Footer />
         </main>

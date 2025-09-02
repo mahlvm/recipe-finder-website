@@ -11,7 +11,7 @@ const Footer = () => {
             <img src={bluesky} alt="Bluesky" />
             <img src={tiktok} alt="Tiktok" />
         </div>
-                Made with ❤️ and 🥑
+        <span className='footerHomeText'>Made with ❤️ and 🥑</span>
     </footer>
 )}
 
