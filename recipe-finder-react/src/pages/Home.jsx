@@ -18,10 +18,10 @@ const Home = () => {
     <div className='homeContainer'>
         <Navbar/>
         <img className="backgroundIcon" src={patternsquiggle1} alt="patternsquiggle1" />
-        <div className='highlight'></div>
         <main className='mainHome'>
         <section className='section1'>
-            <h1 className='h1'>Healthy meals, zero fuss</h1>
+            <h1 className='h1'><span className='spanHighlight'>Healthy <div className='highlight'></div> </span> meals, zero fuss</h1>
+            
             <p className='p'>
             Discover eight quick, whole-food recipes that you can cook tonight—no
             processed junk, no guesswork.
@@ -33,6 +33,7 @@ const Home = () => {
             </picture>
             
         </section>
+
 
         <section className='section2'>
             <h2 className='h2'>What you'll get</h2>
@@ -54,6 +55,8 @@ const Home = () => {
                 </div>
             </div>
         </section>
+
+        <hr></hr>
 
         <section className='section3'>
             <div className='highlight2'></div>
