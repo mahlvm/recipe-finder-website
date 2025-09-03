@@ -4,6 +4,7 @@ import { useState } from "react";
 import "./Navbar.css"
 import ButtonToRecipes from "./ButtonToRecipes";
 import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const [menuToggle, setMenuToggle] = useState(false)
@@ -18,24 +19,35 @@ const Navbar = () => {
             <nav className="navbarContainer">
                 <div className="navbar">
                     <div className="logo">
-                    <img src={logo} alt="Logo" />
+                        <img src={logo} alt="Logo" />
+                    </div>
+                    <div onClick={toggleMenu} className="hamburgerMenu">
+                        <img src={hamburgerMenu} alt="icon-hamburger-menu" />
+                    </div>
+                    <div className={`nav-list ${menuToggle ? "active" : ""}`}>
+                           <ul className="nav-list-ul">
+                                <li className="li">
+                                    <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+                                        Home
+                                    </NavLink>
+                                </li>
+                                <li className="li">
+                                    <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+                                        About
+                                    </NavLink>
+                                </li>
+                                <li className="li">
+                                    <NavLink to="/recipes" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+                                        Recipes
+                                    </NavLink>
+                                </li>
+                            </ul>
+                        <div className="liButton">
+                                <ButtonToRecipes text="Browse recipes" className="" />
+                        </div>
+                    </div>
                 </div>
-                <div onClick={toggleMenu} className="hamburgerMenu">
-                    <img src={hamburgerMenu} alt="icon-hamburger-menu" />
-                </div>
-                </div>
-                <div className="nav-list">
-                {menuToggle && (
-                <ul className="nav-list-ul">
-                <li className="li" onClick={() => navigate("/")}>Home</li>
-                <li className="li" onClick={() => navigate("/about")}>About</li>
-                <li className="li" onClick={() => navigate("/recipes")}>Recipes</li>
-                <li className="liButton">
-                    <ButtonToRecipes text="Browse recipes" className="" />
-                </li>
-                </ul>
-            )}
-            </div>
+                
             </nav>
 
         </>
