@@ -59,16 +59,17 @@ const Home = () => {
         <hr></hr>
 
         <section className='section3'>
-            <div className='highlight2'></div>
-            <h2 className='h2'>Built for real life</h2>
-            <p className='p'>
-            Cooking shouldn't be complicated. These recipes come in under <span className='thirtymin'>30 minutes </span>
-            of active time, fit busy schedules, and taste good enough to repeat.
-            </p>
-            <p className='p'>
-            Whether you're new to the kitchen or just need fresh ideas, we've got
-            you covered.
-            </p>
+            <div className='txtsection3'>
+                <h2 className='h2'>Built for real life</h2>
+                <p className='p'>
+                Cooking shouldn't be complicated. These recipes come in under <span className='thirtymin'>30 minutes <div className='highlight2'></div></span>
+                of active time, fit busy schedules, and taste good enough to repeat.
+                </p>
+                <p className='p'>
+                Whether you're new to the kitchen or just need fresh ideas, we've got
+                you covered.
+                </p>
+            </div>
 
             <picture className='imgPhotoSthree'>
                 <source media="(max-width: 375px)" srcSet={imagehomereallifesmall} />
